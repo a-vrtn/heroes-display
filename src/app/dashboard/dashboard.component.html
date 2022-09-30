@@ -1,0 +1,10 @@
+<h2>Top Heroes</h2>
+<small>This project is following a short tutorial on how to create Angular application from scratch. This app features components, services, navigation and emulates CRUD api calls using in memory web api.</small>
+<div class="heroes-menu">
+  <a *ngFor="let hero of heroes"
+   routerLink="/detail/{{hero.id}}">>
+    {{hero.name}}
+  </a>
+</div>
+
+<app-hero-search></app-hero-search>
